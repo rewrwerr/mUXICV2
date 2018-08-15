@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "rr";
+const prefix = "!";
 /////////////////////////
 ////////////////////////
 
@@ -341,6 +341,5 @@ client.on('message', message => {
       message.channel.send(helpEmbed);
     }
 });
-
 
 client.login(process.env.BOT_TOKEN);
